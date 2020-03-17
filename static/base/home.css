@@ -1,0 +1,25 @@
+h3.home-content {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div#container {
+    margin: 0 auto;
+}
+
+div.hot-blog {
+    position: relative;
+    margin-right: 10px;
+}
+
+body a{
+    color: black;
+}
+
+body {
+    padding-bottom: 80px;
+    background-color: #eee;
+}
+

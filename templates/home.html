@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    我的网站 | 首页
+{% endblock %}
+{% block header_extends %}
+    <link rel="stylesheet" href="{% static 'base/home.css' %}">
+
+{% endblock %}
+{% block nav_home_active %}active{% endblock %}
+{% block content %}
+    <div style="background-color: #eee;">
+    <div style="background-color: #393D49;width: 100%;height: 600px;margin-bottom: 40px">
+        <img src=".././media/image/banner.jpg" alt="" style="margin-left: 15%">
+    </div>
+    <div class="container" >
+        <div class="row">
+            <div class="row" style="margin-bottom: 78px">
+                <ul class="main">
+                    <li class="col-md-3" style="border-radius: 20px;padding-top: 30px;padding-bottom: 30px;border: 1px solid white;background-color: white">
+                        <fieldset class="layui-elem-field layui-field-title">
+                            <legend style="text-align: center;font-weight: bold">学无止境</legend>
+                            <p>学习，探索，研究，从不了解到了解，从无知到掌握，到灵活运用，在不断的学习中加深认识。由浅入深，由表及里。</p>
+                        </fieldset>
+                    </li>
+                    <li class="col-md-3" style="border-radius: 20px;padding-top: 30px;padding-bottom: 30px;border: 1px solid white;margin-left: 150px;background-color: white">
+                        <fieldset class="layui-elem-field layui-field-title">
+                            <legend style="text-align: center;font-weight: bold">业精于勤</legend>
+                            <p>“业精于勤荒于嬉”，精深的业技靠的是勤学、刻苦努力，靠的是争分夺秒的勤学苦练才会有精深的技术。得在认真，失在随便。</p>
+                        </fieldset>
+                    </li>
+                    <li class="col-md-3" style="border-radius: 20px;padding-top: 30px;padding-bottom: 30px;border: 1px solid white;margin-left: 150px;background-color: white">
+                        <fieldset class="layui-elem-field layui-field-title">
+                            <legend style="text-align: center;font-weight: bold">工匠精神</legend>
+                            <p>尽职尽责，精益求精，耐心、执着、坚持，追求突破，不惜花费时间精力，孜孜不倦，反复改进产品，把99%提高到99.99%。</p>
+                        </fieldset>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    {#    <h3 class="home-content">欢迎我的网站，随便看</h3>#}
+    {#    <script src="http://cdn.highcharts.com.cn/highcharts/highcharts.js"></script>#}
+    {##}
+    {#    <div class="container-fluid">#}
+    {#        <div class="row">#}
+    {#            <div class="hot-blog clo-md-4 col-md-offset-1">#}
+    {#                <h3>前七天热门博客</h3>#}
+    {#                <ul>#}
+    {#                    {% for hot_blog in hot_blogs_for_7_days %}#}
+    {#                        <li><a href="{% url 'blog_detail' hot_blog.id %}">{{ hot_blog.title }}</a>#}
+    {#                            ({{ hot_blog.read_num_sum }})#}
+    {#                        </li>#}
+    {#                    {% empty %}#}
+    {#                        <li>今天暂时没有热门博客</li>#}
+    {#                    {% endfor %}#}
+    {#                </ul>#}
+    {#            </div>#}
+    {##}
+    {##}
+    {#        </div>#}
+    {#    </div>#}
+    {#<!-- 图表容器 DOM -->#}
+    {#    <div id="container" style="width: 600px;height:400px;"></div>#}
+    {##}
+    {#                <script>#}
+    {#                    // 图表配置#}
+    {#                    var options = {#}
+    {#                        chart: {type: 'line'},#}
+    {#                        title: {#}
+    {#                            text: null               // 标题#}
+    {#                        },#}
+    {#                        xAxis: {#}
+    {#                            categories: {{ dates|safe }},   // x 轴分类#}
+    {#                            title: {text: '最近七天的阅读量'}#}
+    {#                        },#}
+    {#                        yAxis: {#}
+    {#                            title: {text: null},#}
+    {#                            labels: {enabled: false},#}
+    {#                            gridLineDashStyle: 'Dash',#}
+    {#                        },#}
+    {#                        plotOptions: {#}
+    {#                            line: {#}
+    {#                                dataLabels: {#}
+    {#                                    enabled: true#}
+    {#                                }#}
+    {#                            }#}
+    {#                        },#}
+    {#                        series: [{                              // 数据列#}
+    {#                            name: '阅读量',                        // 数据列名#}
+    {#                            data: {{ read_nums }}                     // 数据#}
+    {#                        }],#}
+    {#                        credits: {enabled: false},#}
+    {#                    };#}
+    {#                    // 图表初始化函数#}
+    {#                    var chart = Highcharts.chart('container', options);#}
+    {#                </script>#}
+
+{% endblock %}

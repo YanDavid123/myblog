@@ -1,0 +1,12 @@
+ * {
+            margin: 0;
+            padding: 0;
+        }
+
+ div.paginator  {
+     text-align: center;
+ }
+
+ ul.navbar-right {
+     margin-right: 0;
+ }

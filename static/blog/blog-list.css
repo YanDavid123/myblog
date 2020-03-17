@@ -1,0 +1,55 @@
+ul.blog-type {
+    list-style-type: none
+}
+#rows {
+    padding-top: 60px;
+}
+
+#biaoti {
+    border-left: 5px solid #1fa6e6;
+    padding-left: 15px;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+div.blog {
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+}
+#content {
+    padding-left: 20px;
+}
+div.blog h3 {
+    margin-top: 0.5em;
+}
+.blog-info {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body a {
+	color:black;
+}
+
+
+.blog #biaoti a {
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#content {
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+.blog-info li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
